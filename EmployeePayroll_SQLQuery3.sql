@@ -13,6 +13,12 @@ Create Table Employee_Payroll
  Values
  ('Arun',15000.0,'2019-01-03'),
  ('Akshata',20000.0,'2020-01-15'),
- ('Chetan',30000.0,'2021-05-20');
+ ('Chetan',30000.0,'2021-05-20'),
+ ('Rahul',40000.0,'2021-10-25');
+ 
 
  Select * from Employee_Payroll;
+
+ Select * from Employee_Payroll Where EmpName = 'Akshata';
+
+ Select * from Employee_Payroll Where StartDate Between CAST('2019-01-01' As datetime) And GETDATE();  
