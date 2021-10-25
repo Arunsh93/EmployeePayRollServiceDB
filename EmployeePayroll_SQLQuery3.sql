@@ -8,3 +8,11 @@ Create Table Employee_Payroll
  Salary Money Not null,
  StartDate Date Not null
  ); 
+
+ Insert into Employee_Payroll
+ Values
+ ('Arun',15000.0,'2019-01-03'),
+ ('Akshata',20000.0,'2020-01-15'),
+ ('Chetan',30000.0,'2021-05-20');
+
+ Select * from Employee_Payroll;
