@@ -11,7 +11,7 @@ Create Table Employee_Payroll
 
  Insert into Employee_Payroll
  Values
- ('Arun',15000.0,'2019-01-03'),
+ ('Divya',25000.0,'2018-01-03', 'F'),
  ('Akshata',20000.0,'2020-01-15'),
  ('Chetan',30000.0,'2021-05-20'),
  ('Rahul',40000.0,'2021-10-25');
@@ -28,3 +28,20 @@ Create Table Employee_Payroll
 Update Employee_Payroll 
 Set Gender = 'M'
 Where EmpName = 'Rahul' or EmpName = 'Chetan';
+
+Select Sum(Salary) from Employee_Payroll Where Gender = 'F' Group by Gender;
+Select Sum(Salary) from Employee_Payroll Where Gender = 'M' Group by Gender;
+Select Sum(Salary) from Employee_Payroll Group by Gender;
+
+Select avg(Salary) from Employee_Payroll Where Gender = 'F' Group by Gender;
+Select avg(Salary) from Employee_Payroll Where Gender = 'M' Group by Gender;
+Select avg(Salary) from Employee_Payroll Group by Gender;
+
+Select Min(Salary) from Employee_Payroll Where Gender = 'F' Group by Gender;
+Select Min(Salary) from Employee_Payroll Where Gender = 'M' Group by Gender;
+Select Min(Salary) from Employee_Payroll Group by Gender;
+
+Select Max(Salary) from Employee_Payroll Where Gender = 'F' Group by Gender;
+Select Min(Salary) from Employee_Payroll Where Gender = 'M' Group by Gender;
+Select Min(Salary) from Employee_Payroll Group by Gender;
+
