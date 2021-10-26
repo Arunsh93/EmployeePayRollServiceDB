@@ -46,7 +46,21 @@ Select Min(Salary) from Employee_Payroll Where Gender = 'M' Group by Gender;
 Select Min(Salary) from Employee_Payroll Group by Gender;
 
 Alter Table Employee_Payroll
-Add PhoneNumber varchar(15), Department varchar(10) Not null default 'MCA', Address varchar(25) Not null default 'Bangalore';
+Add PhoneNumber varchar(15), 
+	Department varchar(10) Not null default 'MCA', 
+	Address varchar(25) Not null default 'Bangalore';
 
 select * from Employee_Payroll;
+
+sp_rename 'Employee_Payroll.Salary','BasicPay';
+
+Alter table Employee_Payroll
+Add Deduction real,
+	TaxablePay money,
+	IncomeTax money,
+	NetPay float; 
+
+
+
+
 	
