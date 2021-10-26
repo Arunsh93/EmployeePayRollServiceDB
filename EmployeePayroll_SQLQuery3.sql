@@ -21,4 +21,10 @@ Create Table Employee_Payroll
 
  Select * from Employee_Payroll Where EmpName = 'Akshata';
 
- Select * from Employee_Payroll Where StartDate Between CAST('2019-01-01' As datetime) And GETDATE();  
+ Select * from Employee_Payroll Where StartDate Between CAST('2019-01-01' As datetime) And GETDATE(); 
+ 
+ Alter table Employee_Payroll Add Gender varchar(5); 
+
+Update Employee_Payroll 
+Set Gender = 'M'
+Where EmpName = 'Rahul' or EmpName = 'Chetan';
