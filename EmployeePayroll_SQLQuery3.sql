@@ -60,6 +60,13 @@ Add Deduction real,
 	IncomeTax money,
 	NetPay float; 
 
+ Update Employee_Payroll
+ Set Department = 'Sales', Address = 'India', Deduction = 100.0, TaxablePay = 10000.0, IncomeTax = 2000.0, NetPay = 1200.0
+ Where EmpName = 'Terisa';
+
+ Update Employee_Payroll
+ Set TaxablePay = 12000.0, Department = 'Marketing', IncomeTax = 2500.0, NetPay = 1300.0
+ Where EmpName = 'Terisa';
 
 
 
